@@ -1,0 +1,33 @@
+.card {
+	text-align: center;
+}
+.products {
+	width: 600px;
+}
+.products p {
+	text-transform: capitalize;
+	font-weight: 600;
+}
+.products ul {
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.products ul li {
+	display: flex;
+	margin-bottom: 10px;
+}
+.products ul li span {
+	width: 100px;
+}
+.products ul li span:not(:last-child) {
+	margin-right: 10px;
+}
+table {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+table th {
+	border-bottom: 1px solid #000;
+}
