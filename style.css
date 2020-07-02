@@ -1,33 +1,96 @@
-.card {
-	text-align: center;
+body {
+	margin: 0;
+}
+.container {
+	width: 1200px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
 }
 .products {
-	width: 600px;
+	padding: 20px;
+	width: 400px;
+}
+.products button {
+	color: #fff;
+	background: #006a7f;
+	border: 0;
+	border-radius: 5px;
 }
 .products p {
 	text-transform: capitalize;
 	font-weight: 600;
 }
 .products ul {
-	display: inline-block;
-	margin-right: auto;
-	margin-left: auto;
+	padding-left: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .products ul li {
 	display: flex;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 .products ul li span {
 	width: 100px;
 }
+.products ul li span:nth-child(2) {
+	text-align: right;
+}
 .products ul li span:not(:last-child) {
 	margin-right: 10px;
 }
-table {
-	width: 500px;
+.card {
+	padding: 20px;
+	flex: 1;
+}
+.card h3 {
+	text-align: center;
+}
+.card table {
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	border-spacing: 0;
+	border-collapse: collapse;
 }
-table th {
-	border-bottom: 1px solid #000;
+.card table tr {
+	background-color: #f4f5f7;
+	border: 1px solid #fff;
+	padding: 5px;
+}
+.card table tr:last-child {
+	background-color: #6f9783;
+	color: #fff;
+}
+.card table tr:last-child td:last-child {
+	text-align: right;
+}
+.card table th {
+	border: 1px solid #fff;
+	background-color: #006a80;
+	color: #fff;
+	padding: 8px;
+}
+.card table td {
+	padding: 5px;
+	border: 1px solid #fff;
+	border-bottom-color: #000;
+	vertical-align: top;
+	text-transform: capitalize;
+}
+#clearCard {
+	margin-top: 20px;
+	padding: 15px 25px;
+	background-color: #f4f5f7;
+	border-color: transparent;
+	border-width: 0;
+	border-radius: 5px;
+	color: #555;
+	cursor: pointer;
+	transition: 0.3s;
+}
+#clearCard:hover {
+	background-color: #b02727;
+	color: #fff;
 }
